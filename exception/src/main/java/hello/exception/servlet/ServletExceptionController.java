@@ -13,6 +13,7 @@ public class ServletExceptionController {
 
     @GetMapping("/error-ex")
     public void errorEx() {
+        log.info("error Ex 컨트롤러 호출!");
         throw new RuntimeException("예외 발생!!!! 초비상!");
     }
 
